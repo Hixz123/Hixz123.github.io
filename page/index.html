@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='http://localhost:1313/page/'>
 
-<link rel="stylesheet" href="/scss/style.min.0c4c659ba75d2a47414047c879ed8a3b2d235793ad0fce0fee7cd22ea230e854.css"><meta property='og:title' content="Pages">
+<link rel="stylesheet" href="/scss/style.min.c0a1607984ae473c5df38bc2f69f71c93221bc565d0c9c968cabb4a38b8fa200.css"><meta property='og:title' content="Pages">
 <meta property='og:description' content="谢天谢地，世界不仅仅局限于这里。✍️">
 <meta property='og:url' content='http://localhost:1313/page/'>
 <meta property='og:site_name' content='Hixz12&#39;s Blog'>
@@ -334,6 +334,10 @@
 
     <div class="tagCloud-tags">
         
+            <a href="/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E5%B8%B8/" class="font_size_1">
+                生活日常
+            </a>
+        
     </div>
 </section>
 
@@ -354,6 +358,10 @@
     <h2 class="widget-title section-title">标签云</h2>
 
     <div class="tagCloud-tags">
+        
+            <a href="/tags/2024/" class="font_size_2">
+                2024
+            </a>
         
     </div>
 </section>
@@ -446,6 +454,12 @@
 </footer>
 
 
+<section class="running-time">
+    Hixz12's Blog已航行
+    <span id="runningdays" class="running-days"></span>
+    </section>
+
+
             </main>
         </div>
         <script 
@@ -466,5 +480,18 @@
 </script>
 <script src="/js/snow.js"></script>
 
+<script>
+    let s1 = '2024-10-06'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
     </body>
 </html>

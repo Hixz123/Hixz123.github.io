@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='http://localhost:1313/tags/2024/'>
 
-<link rel="stylesheet" href="/scss/style.min.0c4c659ba75d2a47414047c879ed8a3b2d235793ad0fce0fee7cd22ea230e854.css"><meta property='og:title' content="Tag: 2024 - Hixz12's Blog">
+<link rel="stylesheet" href="/scss/style.min.c0a1607984ae473c5df38bc2f69f71c93221bc565d0c9c968cabb4a38b8fa200.css"><meta property='og:title' content="Tag: 2024 - Hixz12's Blog">
 <meta property='og:description' content="谢天谢地，世界不仅仅局限于这里。✍️">
 <meta property='og:url' content='http://localhost:1313/tags/2024/'>
 <meta property='og:site_name' content='Hixz12&#39;s Blog'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-10-09T22:22:49&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-10-10T23:06:28&#43;08:00 '/>
 <meta name="twitter:title" content="Tag: 2024 - Hixz12's Blog">
 <meta name="twitter:description" content="谢天谢地，世界不仅仅局限于这里。✍️"><link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/tags/2024/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -334,6 +334,10 @@
 
     <div class="tagCloud-tags">
         
+            <a href="/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E5%B8%B8/" class="font_size_1">
+                生活日常
+            </a>
+        
     </div>
 </section>
 
@@ -355,7 +359,7 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/tags/2024/" class="font_size_1">
+            <a href="/tags/2024/" class="font_size_2">
                 2024
             </a>
         
@@ -376,7 +380,7 @@
 
         <div class="section-card">
             <div class="section-details">
-                <h3 class="section-count">1 个页面</h3>
+                <h3 class="section-count">2 个页面</h3>
                 <h1 class="section-term">2024</h1>
                 
             </div>
@@ -386,11 +390,22 @@
     <section class="article-list--compact">
         
             <article>
-    <a href="/p/hugo-%E7%AE%80%E6%98%8E%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/">
+    <a href="/p/%E9%9A%8F%E8%AE%B0%E4%B8%80/">
         <div class="article-details">
-            <h2 class="article-title">Hugo | 简明搭建笔记</h2>
+            <h2 class="article-title">随记（一）</h2>
             <footer class="article-time">
-                <time datetime='2024-10-09T00:00:00Z'>Oct 09, 2024</time>
+                <time datetime='2024-10-10T23:06:28&#43;08:00'>Oct 10, 2024</time>
+            </footer>
+        </div>
+    </a>
+</article>
+        
+            <article>
+    <a href="/p/start/">
+        <div class="article-details">
+            <h2 class="article-title">Start</h2>
+            <footer class="article-time">
+                <time datetime='2024-10-06T23:06:19&#43;08:00'>Oct 06, 2024</time>
             </footer>
         </div>
     </a>
@@ -413,6 +428,12 @@
 </footer>
 
 
+<section class="running-time">
+    Hixz12's Blog已航行
+    <span id="runningdays" class="running-days"></span>
+    </section>
+
+
             </main>
         </div>
         <script 
@@ -433,5 +454,18 @@
 </script>
 <script src="/js/snow.js"></script>
 
+<script>
+    let s1 = '2024-10-06'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
     </body>
 </html>
